@@ -8,7 +8,7 @@ if a == 1
     ylabel('y')
 elseif a == 2
     x=-pi:0.1:pi;
-    plot(t,cos(x),'r')
+    plot(x,cos(x),'r')
     grid on
     xlabel('x')
     ylabel('y')
