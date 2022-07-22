@@ -9,7 +9,7 @@ main(){
 	scanf("%lf %lf", &a, &b);
 	printf("\t\tx^5 + %.0lfx^2 - %.0lf = 0\n", a, b);
 	printf("Solve for x: "); scanf("%lf", &xo);
-	while(n<N){
+	do{
 		d = b - a*xo*xo;
 		if (d > 0){
 			x = pow(d, 0.2);
@@ -20,6 +20,6 @@ main(){
 			exit(1);
 		}
 		xo = x; n++;
-	}
+	}while(n<N);
 	printf("Nghiem x= %.5lf\nDo lech dx= %.2lf\nSo lan tinh n: %.0lf", x, dx, n);
 }
